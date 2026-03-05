@@ -2,7 +2,7 @@ import { BaseSkillAdapter } from "./base.js";
 import { registry } from "./registry.js";
 import type { SkillDefinition, GeneratedFile } from "../types/index.js";
 import { existsSync } from "node:fs";
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 
 class OpenCodeSkillAdapter extends BaseSkillAdapter {
